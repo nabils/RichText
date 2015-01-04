@@ -1,0 +1,21 @@
+﻿<Window x:Class="RichText.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:richText="clr-namespace:RichText"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <richText:SyntaxHighlightingRichTextBox
+                x:Name="rtb"
+            FontSize="24"
+            FontFamily="Segoe UI"
+            AcceptsReturn="False" 
+            AcceptsTab="False" 
+            Height="100"
+            Margin="10" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center"></richText:SyntaxHighlightingRichTextBox>
+            
+            <Button Click="ButtonBase_OnClick">button</Button>
+        </StackPanel>
+    </Grid>
+</Window>
